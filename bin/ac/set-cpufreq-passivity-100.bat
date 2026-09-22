@@ -1,8 +1,8 @@
 set call_powercfg=powercfg -SetAcValueIndex Scheme_Current Sub_Processor
 
-%call_powercfg% ProcThrottleMin 99
-%call_powercfg% ProcThrottleMin1 99
-%call_powercfg% ProcThrottleMin2 99
+%call_powercfg% ProcThrottleMin 100
+%call_powercfg% ProcThrottleMin1 100
+%call_powercfg% ProcThrottleMin2 100
 %call_powercfg% ProcThrottleMax 100
 %call_powercfg% ProcThrottleMax1 100
 %call_powercfg% ProcThrottleMax2 100
@@ -21,8 +21,8 @@ set call_powercfg=powercfg -SetAcValueIndex Scheme_Current Sub_Processor
 %call_powercfg% PerfIncPol1 1
 %call_powercfg% PerfDecPol 1
 %call_powercfg% PerfDecPol1 1
-%call_powercfg% LatencyHintPerf 99
-%call_powercfg% LatencyHintPerf1 99
-%call_powercfg% LatencyHintPerf2 99
+%call_powercfg% LatencyHintPerf 100
+%call_powercfg% LatencyHintPerf1 100
+%call_powercfg% LatencyHintPerf2 100
 
 powercfg -SetActive Scheme_Current

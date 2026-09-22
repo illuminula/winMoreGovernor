@@ -2,57 +2,69 @@
 台式和笔记本通用  
 
 ## CPU频率调整
-[AC-ConstantMax ]: ../bin/ac/set-cpufreq-constantmax.bat
-[AC-ConstantBase]: ../bin/ac/set-cpufreq-constantbase.bat
-[AC-LowLatency  ]: ../bin/ac/set-cpufreq-lowlatency.bat
+[AC-ConstantMax   ]: ../bin/ac/set-cpufreq-constantmax.bat
+[AC-ConstantBase  ]: ../bin/ac/set-cpufreq-constantbase.bat
+[AC-LowLatency-99 ]: ../bin/ac/set-cpufreq-lowlatency-99.bat
+[AC-LowLatency-100]: ../bin/ac/set-cpufreq-lowlatency-100.bat
+[AC-Balance       ]: ../bin/ac/set-cpufreq-balance.bat
+[AC-Balance-50    ]: ../bin/ac/set-cpufreq-balance-50.bat
+[AC-Balance-75    ]: ../bin/ac/set-cpufreq-balance-75.bat
+[AC-Balance-99    ]: ../bin/ac/set-cpufreq-balance-99.bat
+[AC-Balance-100   ]: ../bin/ac/set-cpufreq-balance-100.bat
+[AC-Passivity     ]: ../bin/ac/set-cpufreq-passivity.bat
+[AC-Passivity-50  ]: ../bin/ac/set-cpufreq-passivity-50.bat
+[AC-Passivity-75  ]: ../bin/ac/set-cpufreq-passivity-75.bat
+[AC-Passivity-99  ]: ../bin/ac/set-cpufreq-passivity-99.bat
+[AC-Passivity-100 ]: ../bin/ac/set-cpufreq-passivity-100.bat
 
-[AC-Balance     ]: ../bin/ac/set-cpufreq-balance.bat
-[AC-Balance-50  ]: ../bin/ac/set-cpufreq-balance-50.bat
-[AC-Balance-75  ]: ../bin/ac/set-cpufreq-balance-75.bat
-[AC-Balance-99  ]: ../bin/ac/set-cpufreq-balance-99.bat
-[AC-Passivity   ]: ../bin/ac/set-cpufreq-passivity.bat
-[AC-Passivity-50]: ../bin/ac/set-cpufreq-passivity-50.bat
-[AC-Passivity-75]: ../bin/ac/set-cpufreq-passivity-75.bat
-[AC-Passivity-99]: ../bin/ac/set-cpufreq-passivity-99.bat
-
-[DC-Balance     ]: ../bin/dc/set-cpufreq-balance.bat
-[DC-Balance-50  ]: ../bin/dc/set-cpufreq-balance-50.bat
-[DC-Balance-75  ]: ../bin/dc/set-cpufreq-balance-75.bat
-[DC-Balance-99  ]: ../bin/dc/set-cpufreq-balance-99.bat
-[DC-Passivity   ]: ../bin/dc/set-cpufreq-passivity.bat
-[DC-Passivity-50]: ../bin/dc/set-cpufreq-passivity-50.bat
-[DC-Passivity-75]: ../bin/dc/set-cpufreq-passivity-75.bat
-[DC-Passivity-99]: ../bin/dc/set-cpufreq-passivity-99.bat
+[DC-ConstantBase ]: ../bin/dc/set-cpufreq-constantbase.bat
+[DC-LowLatency-99]: ../bin/dc/set-cpufreq-lowlatency-99.bat
+[DC-Balance      ]: ../bin/dc/set-cpufreq-balance.bat
+[DC-Balance-50   ]: ../bin/dc/set-cpufreq-balance-50.bat
+[DC-Balance-75   ]: ../bin/dc/set-cpufreq-balance-75.bat
+[DC-Balance-99   ]: ../bin/dc/set-cpufreq-balance-99.bat
+[DC-Balance-100  ]: ../bin/dc/set-cpufreq-balance-100.bat
+[DC-Passivity    ]: ../bin/dc/set-cpufreq-passivity.bat
+[DC-Passivity-50 ]: ../bin/dc/set-cpufreq-passivity-50.bat
+[DC-Passivity-75 ]: ../bin/dc/set-cpufreq-passivity-75.bat
+[DC-Passivity-99 ]: ../bin/dc/set-cpufreq-passivity-99.bat
+[DC-Passivity-100]: ../bin/dc/set-cpufreq-passivity-100.bat
 
 - ## 表现一览
-  | 调频器       | 频率表现                  | 性能表现 | 待机电压 |
-  | :----------- | :------------------------ | :------- | :------- |
-  | ConstantMax  | 恒定最高频率              | 极致响应 | 最高     |
-  | ConstantBase | 恒定基本频率              | 最佳能效 | 高       |
-  | LowLatency   | 按需激进提频(下限99%基频) | 超高响应 | 高       |
-  | Balance      | 按需积极提频              | 高响应   | 低       |
-  | Balance-50   | 按需积极提频(下限50%基频) | 高响应   | 低       |
-  | Balance-75   | 按需积极提频(下限75%基频) | 高响应   | 中等     |
-  | Balance-99   | 按需积极提频(下限99%基频) | 超高响应 | 高       |
-  | Passivity    | 按需被动提频              | 中等响应 | 低       |
-  | Passivity-50 | 按需被动提频(下限50%基频) | 中等响应 | 低       |
-  | Passivity-75 | 按需被动提频(下限75%基频) | 中等响应 | 中等     |
-  | Passivity-99 | 按需被动提频(下限99%基频) | 高响应   | 高       |
+  | 调频器         | 频率表现                   | 性能表现 | 待机电压 |
+  | :------------- | :------------------------- | :------- | :------- |
+  | ConstantMax    | 恒定最高频率               | 极致响应 | 最高     |
+  | ConstantBase   | 恒定基本频率               | 最佳能效 | 高       |
+  | LowLatency-99  | 按需激进提频(下限99%基频)  | 超高响应 | 高       |
+  | LowLatency-100 | 按需激进提频(下限100%基频) | 超高响应 | 高       |
+  | Balance        | 按需积极提频               | 中等响应 | 低       |
+  | Balance-50     | 按需积极提频(下限50%基频)  | 高响应   | 低       |
+  | Balance-75     | 按需积极提频(下限75%基频)  | 高响应   | 中等     |
+  | Balance-99     | 按需积极提频(下限99%基频)  | 高响应   | 高       |
+  | Balance-100    | 按需积极提频(下限100%基频) | 超高响应 | 高       |
+  | Passivity      | 按需被动提频               | 低响应   | 低       |
+  | Passivity-50   | 按需被动提频(下限50%基频)  | 中等响应 | 低       |
+  | Passivity-75   | 按需被动提频(下限75%基频)  | 中等响应 | 中等     |
+  | Passivity-99   | 按需被动提频(下限99%基频)  | 高响应   | 高       |
+  | Passivity-100  | 按需被动提频(下限100%基频) | 高响应   | 高       |
 
 - ## 用途一览
-  | 调频器       | AC用              | DC用              |
-  | :----------- | :---------------- | :---------------- |
-  | ConstantMax  | [AC-ConstantMax]  | ❌                 |
-  | ConstantBase | [AC-ConstantBase] | ❌                 |
-  | LowLatency   | [AC-LowLatency]   | ❌                 |
-  | Balance      | [AC-Balance]      | [DC-Balance]      |
-  | Balance-50   | [AC-Balance-50]   | [DC-Balance-50]   |
-  | Balance-75   | [AC-Balance-75]   | [DC-Balance-75]   |
-  | Balance-99   | [AC-Balance-99]   | [DC-Balance-99]   |
-  | Passivity    | [AC-Passivity]    | [DC-Passivity]    |
-  | Passivity-50 | [AC-Passivity-50] | [DC-Passivity-50] |
-  | Passivity-75 | [AC-Passivity-75] | [DC-Passivity-75] |
-  | Passivity-99 | [AC-Passivity-99] | [DC-Passivity-99] |
+  | 调频器         | AC用                | DC用               |
+  | :------------- | :------------------ | :----------------- |
+  | ConstantMax    | [AC-ConstantMax]    | ❌                  |
+  | ConstantBase   | [AC-ConstantBase]   | [DC-ConstantBase]  |
+  | LowLatency-99  | [AC-LowLatency-99]  | [DC-LowLatency-99] |
+  | LowLatency-100 | [AC-LowLatency-100] | ❌                  |
+  | Balance        | [AC-Balance]        | [DC-Balance]       |
+  | Balance-50     | [AC-Balance-50]     | [DC-Balance-50]    |
+  | Balance-75     | [AC-Balance-75]     | [DC-Balance-75]    |
+  | Balance-99     | [AC-Balance-99]     | [DC-Balance-99]    |
+  | Balance-100    | [AC-Balance-100]    | [DC-Balance-100]   |
+  | Passivity      | [AC-Passivity]      | [DC-Passivity]     |
+  | Passivity-50   | [AC-Passivity-50]   | [DC-Passivity-50]  |
+  | Passivity-75   | [AC-Passivity-75]   | [DC-Passivity-75]  |
+  | Passivity-99   | [AC-Passivity-99]   | [DC-Passivity-99]  |
+  | Passivity-100  | [AC-Passivity-100]  | [DC-Passivity-100] |
 
 > [!IMPORTANT]  
 > 需要管理员权限运行  

@@ -21,8 +21,8 @@ set call_powercfg=powercfg -SetDcValueIndex Scheme_Current Sub_Processor
 %call_powercfg% PerfIncPol1 1
 %call_powercfg% PerfDecPol 1
 %call_powercfg% PerfDecPol1 1
-%call_powercfg% LatencyHintPerf 100
-%call_powercfg% LatencyHintPerf1 100
-%call_powercfg% LatencyHintPerf2 100
+%call_powercfg% LatencyHintPerf 99
+%call_powercfg% LatencyHintPerf1 99
+%call_powercfg% LatencyHintPerf2 99
 
 powercfg -SetActive Scheme_Current
